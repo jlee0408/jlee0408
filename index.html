@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Australian National Parks Wildlife</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/vega@6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-lite@6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-embed@7"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>National Parks Wildlife</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@6.4.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@6.5.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@7.3.0"></script>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header>
-    <h1>Australian National Parks Wildlife</h1>
-    <p>Exploring protected areas, ecological regions and environmental risks.</p>
-  </header>
+    <header>
+        <h1>National Parks Wildlife</h1>
+        <p>
+            Exploring protected areas and wildlife across Australia.
+        </p>
+    </header>
 
-  <main>
-    <section>
-      <h2>1. Protected Areas</h2>
-      <div id="parks-chart"></div>
-    </section>
+    <main>
+        <section>
+            <h2>Protected areas across Australian states</h2>
+            <p>
+                This chart compares the number of records in the
+                CAPAD terrestrial dataset by state or territory.
+            </p>
 
-    <section>
-      <h2>2. Australian Bioregions</h2>
-      <div id="ibra-chart"></div>
-    </section>
+            <div id="chart1"></div>
+        </section>
+    </main>
 
-    <section>
-      <h2>3. Exotic Environmental Pest Risks</h2>
-      <div id="pest-chart"></div>
-    </section>
-  </main>
-
-  <script src="javascript.js"></script>
+    <script src="javascript.js"></script>
 </body>
 </html>
